@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: url('./img/Untitled.png');
+    color: aliceblue;
+    margin: 0;
+    padding: 10px;
+}   
+
+#groups-table-body {  
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.group-pairs {
+    padding: 10px;
+}
+
+#elimination-round-body {
+    display: none;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+table {
+    border: 1px solid #fff;
+    text-align: center;
+    border-spacing:0;
+}
+
+td {
+    border: 1px solid #fff;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 100%;
+    border: none;
+    width: 100px;
+    height: 100px;
+    background-image: url('./img/soccer-ball.png');
+    background-size: cover;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+}
+
+button:active {
+    box-shadow: 0;
+    transform: translate(2px, 2px);
+}
+
+.trophy {
+    position: fixed;
+    top: -1vh;
+    font-size: 2rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to{
+        transform: translateY(105vh);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    body {
+    padding: 0;
+    }
+
+    #elimination-round-body {
+        padding: 3px;
+    }
+
+    #groups-table-body {  
+        grid-template-columns: repeat(1, 1fr);
+    } 
+
+    #elimination-round-body {
+        grid-template-columns: repeat(1, 1fr);
+    }    
+    table {
+        width:95vw ;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 920px) and (min-width: 421px) {
+    body {
+        padding: 0;
+        }
+
+    #elimination-round-body {
+        padding: 3px;
+        }
+        
+    #groups-table-body {  
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #elimination-round-body {
+        grid-template-columns: repeat(1, 1fr);
+    }    
+    table {
+        width:95vw ;
+        margin-left: 5px;
+    }
+}
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SP 2022 Qatar</title>
+    <script src="https://kit.fontawesome.com/6cf7b1f3dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="buttons">
+        <button id="fl-button">Simulate 1 leg</button>
+        <button id="sl-button" style="display: none;">Simulate 2 leg</button>
+        <button id="tl-button" style="display: none;">Simulate 3 leg</button>
+        <button id="draw-button" style="display: none;">Draw</button>
+        <button id="er-button" style="display: none;">Simulate elimination round</button>
+        <button id="q-button" style="display: none;">Simulate quarter final</button>
+        <button id="semi-button" style="display: none;">Simulate semi final</button>
+        <button id="final-button" style="display: none;">Simulate final game</button>
+      </div>
+      <div id="groups-table-body">
+      </div>
+      <div id="elimination-round-body">
+        <div>    
+          <h5>Elimination round</h5>
+          <p id="elimination-match"> <span id="elTeam1"></span> vs <span id="elTeam2"></span> <span id="elTeamGoal">0</span>:<span id="elTeamGoal">0</span></p>
+          <p id="elimination-match"> <span id="elTeam3"></span> vs <span id="elTeam4"></span> <span id="elTeamGoal">0</span>:<span id="elTeamGoal">0</span></p>
+          <p id="elimination-match"> <span id="elTeam5"></span> vs <span id="elTeam6"></span> <span id="elTeamGoal">0</span>:<span id="elTeamGoal">0</span></p>
+          <p id="elimination-match"> <span id="elTeam7"></span> vs <span id="elTeam8"></span> <span id="elTeamGoal">0</span>:<span id="elTeamGoal">0</span></p>
+          <p id="elimination-match"> <span id="elTeam9"></span> vs <span id="elTeam10"></span> <span id="elTeamGoal">0</span>:<span id="elTeamGoal">0</span></p>
+          <p id="elimination-match"> <span id="elTeam11"></span> vs <span id="elTeam12"></span> <span id="elTeamGoal">0</span>:<span id="elTeamGoal">0</span></p>
+          <p id="elimination-match"> <span id="elTeam13"></span> vs <span id="elTeam14"></span> <span id="elTeamGoal">0</span>:<span id="elTeamGoal">0</span></p>
+          <p id="elimination-match"> <span id="elTeam15"></span> vs <span id="elTeam16"></span> <span id="elTeamGoal">0</span>:<span id="elTeamGoal">0</span></p>
+        </div> 
+        <div> 
+          <h5>Quarter finals</h5>   
+          <p id="q-match"> <span id="qTeam">E1</span> vs <span id="qTeam">E2</span> <span id="qTeamGoal">0</span>:<span id="qTeamGoal">0</span></p>
+          <p id="q-match"> <span id="qTeam">E3</span> vs <span id="qTeam">E4</span> <span id="qTeamGoal">0</span>:<span id="qTeamGoal">0</span></p>
+          <p id="q-match"> <span id="qTeam">E5</span> vs <span id="qTeam">E6</span> <span id="qTeamGoal">0</span>:<span id="qTeamGoal">0</span></p>
+          <p id="q-match"> <span id="qTeam">E6</span> vs <span id="qTeam">E8</span> <span id="qTeamGoal">0</span>:<span id="qTeamGoal">0</span></p>
+        </div> 
+        <div>    
+          <h5>Semi finals</h5>   
+          <p id="semi-match"> <span id="semiTeam">Q1</span> vs <span id="semiTeam">Q2</span> <span id="semiTeamGoal">0</span>:<span id="semiTeamGoal">0</span></p>
+          <p id="semi-match"> <span id="semiTeam">Q3</span> vs <span id="semiTeam">Q4</span> <span id="semiTeamGoal">0</span>:<span id="semiTeamGoal">0</span></p>
+        </div> 
+        <div>   
+          <h5>Final game</h5>    
+          <p id="final-match"> <span id="finalTeam">S1</span> vs <span id="finalTeam">S2</span> <span id="finalTeamGoal">0</span>:<span id="finalTeamGoal">0</span></p>
+        </div> 
+      </div>
+
+      <div>
+        <h3 id="winner"></h3>
+      </div>
+
+
+      <script src="db.js"></script>
+      <script src="main.js"></script>
+  </body>
+</html>
